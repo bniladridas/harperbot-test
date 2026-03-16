@@ -6,3 +6,5 @@ def greet(name):
     if name==None:
         return 'hi'
     return "Hello, " + name
+
+# tweak for inline command testing (2026-03-16)
