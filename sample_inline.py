@@ -10,3 +10,5 @@ def greet(name):
 # tweak for inline command testing (2026-03-16)
 
 # commit after /pause (2026-03-16)
+
+# commit after /resume (2026-03-16)
