@@ -1,14 +1,24 @@
-import os
+from lib.text_utils import normalize_name
 
 
-def greet(name):
-    # intentional minor style issues to encourage review suggestions
-    if name==None:
-        return 'hi'
-    return "Hello, " + name
+def greet(name, *, excited=False):
+    """
+    Intentionally includes a few small style issues so HarperBot has things to suggest.
+    """
+    cleaned = normalize_name(name)
+    if cleaned == None:
+        return "hi"
 
-# tweak for inline command testing (2026-03-16)
+    greeting = "Hello, " + cleaned
+    if excited:
+        greeting = greeting + "!!"
+    return greeting
 
-# commit after /pause (2026-03-16)
 
-# commit after /resume (2026-03-16)
+def demo():
+    print(greet("  niladri  "))
+    print(greet("", excited=True))
+
+
+if __name__ == "__main__":
+    demo()
