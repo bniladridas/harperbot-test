@@ -1,6 +1,5 @@
 {
-  "target": "README.md",
-  "min_score": 0.5,
-  "notes": "TODO: remove this config once the test is complete"
-}
+  "target": "sample_inline.py",
+  "min_score": 1,
+  "notes": "TODO: delete me"
 

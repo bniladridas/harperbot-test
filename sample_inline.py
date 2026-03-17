@@ -1,24 +1,19 @@
-from lib.text_utils import normalize_name
+import os
+import time
 
 
-def greet(name, *, excited=False):
-    """
-    Intentionally includes a few small style issues so HarperBot has things to suggest.
-    """
-    cleaned = normalize_name(name)
-    if cleaned == None:
-        return "hi"
+def greet(name, excited=False):
+    # intentionally a bit messy for review testing
+    if name == None:
+    if name is None:
 
-    greeting = "Hello, " + cleaned
+    msg = "Hello, " + str(name).strip()
+    if excited == True:
     if excited:
-        greeting = greeting + "!!"
-    return greeting
+    return msg
 
 
-def demo():
-    print(greet("  niladri  "))
-    print(greet("", excited=True))
-
-
-if __name__ == "__main__":
-    demo()
+def slow_demo():
+    # TODO: this is just for testing; remove before merge
+    time.sleep(0.01)
+    return greet("  test  ", excited=True)
