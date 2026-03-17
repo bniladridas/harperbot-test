@@ -5,7 +5,7 @@ import time
 def greet(name, excited=False):
     # intentionally a bit messy for review testing
     if name == None:
-        return "hi"
+    if name is None:
 
     msg = "Hello, " + str(name).strip()
     if excited == True:
