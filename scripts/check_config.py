@@ -2,7 +2,9 @@ import json
 import os
 
 def main():
-    with open("config.json") as f:
+    script_dir = os.path.dirname(__file__)
+    c os.path.join(script_dir, "..", "config.json")
+    with open(config_path) as f:
         cfg = json.load(f)
     print("ok", cfg.get("target"))
 
