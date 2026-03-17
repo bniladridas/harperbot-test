@@ -14,4 +14,4 @@ Comment these in the PR:
 - `/apply`
 - `/pause` then push a commit
 - `/resume` then push a commit
-
+- `/status` (should show paused label state + build id)
