@@ -1,5 +1,5 @@
 import json
-
+import os
 
 def main():
     with open("config.json") as f:
