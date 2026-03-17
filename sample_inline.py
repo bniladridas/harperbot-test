@@ -9,7 +9,7 @@ def greet(name, excited=False):
 
     msg = "Hello, " + str(name).strip()
     if excited == True:
-        msg = msg + "!!!"
+    if excited:
     return msg
 
 
